@@ -11,7 +11,9 @@ class Program
 
     static async Task Main()
     {
-        var botClient = new TelegramBotClient("8144420121:AAFDT8hWS0CEcwh5psyrxjluLgxNjQ46rW4");
+        var botToken = Environment.GetEnvironmentVariable("BOT_TOKEN");
+        var botClient = new TelegramBotClient(botToken);
+
 
         using var cts = new CancellationTokenSource();
         var receiverOptions = new ReceiverOptions { AllowedUpdates = { } };
@@ -61,3 +63,5 @@ class Program
         return Task.CompletedTask;
     }
 }
+
+
