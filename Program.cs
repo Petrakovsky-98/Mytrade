@@ -14,14 +14,15 @@ class Program
         var botToken = Environment.GetEnvironmentVariable("BOT_TOKEN");
         var botClient = new TelegramBotClient(botToken);
 
-
         using var cts = new CancellationTokenSource();
         var receiverOptions = new ReceiverOptions { AllowedUpdates = { } };
 
         botClient.StartReceiving(HandleUpdateAsync, HandleErrorAsync, receiverOptions, cancellationToken: cts.Token);
         Console.WriteLine("Bot is running...");
-        Console.ReadLine();
+
+        await Task.Delay(-1); // Замість Console.ReadLine()
     }
+
 
     static async Task HandleUpdateAsync(ITelegramBotClient bot, Update update, CancellationToken token)
     {

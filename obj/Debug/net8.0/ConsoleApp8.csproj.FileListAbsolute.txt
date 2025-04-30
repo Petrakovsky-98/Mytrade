@@ -16,3 +16,4 @@ C:\Users\Ilia\source\repos\ConsoleApp8\ConsoleApp8\obj\Debug\net8.0\refint\Conso
 C:\Users\Ilia\source\repos\ConsoleApp8\ConsoleApp8\obj\Debug\net8.0\ConsoleApp8.pdb
 C:\Users\Ilia\source\repos\ConsoleApp8\ConsoleApp8\obj\Debug\net8.0\ConsoleApp8.genruntimeconfig.cache
 C:\Users\Ilia\source\repos\ConsoleApp8\ConsoleApp8\obj\Debug\net8.0\ref\ConsoleApp8.dll
+C:\Users\Ilia\source\repos\ConsoleApp8\ConsoleApp8\obj\Debug\net8.0\ConsoleApp8.sourcelink.json
